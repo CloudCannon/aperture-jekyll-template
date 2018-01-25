@@ -1,0 +1,26 @@
+.split-content {
+	display: flex;
+	margin: 0 -20px;
+	flex-wrap: wrap;
+
+	.side-content {
+		flex: 1 0 300px;
+		order: 2;
+		display: flex;
+		align-items: center;
+
+		p:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.side-photo {
+		display: flex;
+		align-items: center;
+		flex: 1 0 300px;
+	}
+
+	.side-content, .side-photo {
+		margin: 0 20px;
+	}
+}

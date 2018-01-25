@@ -1,0 +1,75 @@
+---
+title: Home
+photos:
+  - image: /images/1.jpg
+    caption: The Road - San Jose, US
+  - image: /images/2.jpg
+    caption: All Packed - Wellington, NZ
+  - image: /images/3.jpg
+    caption: Stars - Mexico City, MX
+  - image: /images/4.jpg
+    caption: Love - London, GB
+  - image: /images/5.jpg
+    caption: Canyon - Vegas, US
+  - image: /images/6.jpg
+    caption: The Beach - San Diego, US
+  - image: /images/7.jpg
+    caption: Moo - Queenstown, NZ
+  - image: /images/8.jpg
+    caption: Night beach - Seattle, US
+  - image: /images/9.jpg
+    caption: Night - Bangkok, TH
+  - image: /images/10.jpg
+    caption: Pooche - Montreal, CA
+  - image: /images/11.jpg
+    caption: Northern Lights - Reykjavik, IS
+  - image: /images/12.jpg
+    caption: Mount - Mt Cook, NZ
+  - image: /images/13.jpg
+    caption: View - Canmore, CA
+  - image: /images/14.jpg
+    caption: Relax - New York, US
+  - image: /images/15.jpg
+    caption: Snow - Tahoe, US
+  - image: /images/16.jpg
+    caption: Ball - New York, US
+  - image: /images/17.jpg
+    caption: Lemon - San Francisco, US
+  - image: /images/18.jpg
+    caption: Lookout - Canmore, CA
+  - image: /images/19.jpg
+    caption: Ship wreck - Moeraki, NZ
+  - image: /images/20.jpg
+    caption: Beach - Nelson, NZ
+  - image: /images/21.jpg
+    caption: Banana - ID
+---
+
+<ul class="gallery">
+	{% for photo in page.photos %}
+		<li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}" data-location="{{ photo.location}}"></a></li>
+	{% endfor %}
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+</ul>
+
+<div class="overlay">
+	<a href="#" class="close">✕</a>
+	<a class="prev">&lsaquo;</a>
+	<a class="next">&rsaquo;</a>
+	<p class="caption"></p>
+	<img>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/lightbox.js"></script>

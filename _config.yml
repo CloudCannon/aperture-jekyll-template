@@ -1,0 +1,61 @@
+# ----
+# Site
+
+title: Aperture Template
+url: "https://spring-bat.cloudvent.net/"
+baseurl:
+google_analytics_key:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: photography portfolio template for Jekyll.
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name: Aperture Template
+  links:
+    - https://github.com/CloudCannon/aperture-jekyll-template
+
+# -----
+# Build
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      text-width: true
+  -
+    scope:
+      path: "index.html"
+    values:
+      text-width: false
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+social_icons:
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS

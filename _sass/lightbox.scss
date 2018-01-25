@@ -1,0 +1,57 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: -1px;
+	left: 0;
+	z-index: 999;
+	display: none;
+	background: #000;
+
+	.close {
+		position: absolute;
+		top: $offset;
+		right: $offset;
+		font-size: 1.5em;
+	}
+
+	.close, .next, .prev {
+		color: #fff;
+		text-decoration: none;
+		text-shadow: 0px 1px 1px #000;
+		z-index: 9999;
+	}
+
+	.prev, .next {
+		position: absolute;
+		top: 50%;
+		font-size: 3.5em;
+		text-align: center;
+		display: none;
+	}
+
+	.prev {
+		left: $offset;
+	}
+
+	.next {
+		right: $offset;
+	}
+
+	img {
+		margin: 0 auto;
+		display: block;
+		height: 100%;
+	}
+}
+
+.cache {
+	display: none;
+}
+
+body.overlay-active {
+	overflow: hidden;
+	.overlay {
+		display: block;
+	}
+}
