@@ -11,8 +11,7 @@ input[type="submit"] {
 	font-size: .8em;
 
 	&:hover {
-		background: #333;
-		color: #fff;
+		background: $link-color;
 	}
 
 	&:focus {
@@ -36,7 +35,7 @@ input[type="text"], input[type="email"], textarea {
 	resize: none;
 
 	&:focus {
-		outline: 2px solid #333;
+		outline: 2px solid #888;
 	}
 }
 

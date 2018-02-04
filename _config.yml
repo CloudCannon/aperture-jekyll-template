@@ -59,3 +59,11 @@ social_icons:
   - Twitter
   - YouTube
   - RSS
+
+_options:
+  image:
+    width: 2048
+    height: 1365
+    resize_style: "contain"
+    mime_type: "image/jpeg"
+    expandable: true

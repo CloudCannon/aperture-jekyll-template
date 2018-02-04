@@ -2,7 +2,7 @@ html {
 	background: $background;
 	color: $color;
 	font-family: 'Rosario', sans-serif;
-	color: #333;
+	color: $color;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
 }
 
 a {
-	color: #0089ff;
+	color: $link-color;
 	text-decoration: none;
 }
 
@@ -29,15 +29,15 @@ nav {
 	a {
 		padding: 15px;
 		text-decoration: none;
-		color: #aaa;
+		color: darken($color, 30%);
 		transition: color .2s ease;
 
 		&.active {
-			color: #333;
+			color: $color;
 		}
 
 		&:hover {
-			color: #333;
+			color: $color;
 		}
 	}
 }
