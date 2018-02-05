@@ -36,7 +36,7 @@ defaults:
     values:
       text-width: false
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
