@@ -1,6 +1,6 @@
 # Aperture
 
-Aperture template for Jekyll. Browse through a [live demo]().
+Aperture template for Jekyll. Browse through a [live demo](http://cosmic-hippopotamus.cloudvent.net/).
 
 ![Aperture template screenshot](images/_screenshot.png)
 
