@@ -82,6 +82,7 @@ photos:
   if (window.location.host === "app.cloudcannon.com") {
     $('.gallery').find("a").click(function(e) {
       e.preventDefault();
+      return false;
     });
   } else {
     var script = document.createElement("script");
