@@ -1,59 +1,59 @@
 ---
 title: Home
 photos:
-  - image: /images/1.jpg
+  - image: /uploads/1.jpg
     caption: Flamingo - San Jose, US
-  - image: /images/2.jpg
+  - image: /uploads/2.jpg
     caption: Giraffe - Wellington, NZ
-  - image: /images/3.jpg
+  - image: /uploads/3.jpg
     caption: Penguin - Mexico City, MX
-  - image: /images/4.jpg
+  - image: /uploads/4.jpg
     caption: Kingfisher - London, GB
-  - image: /images/5.jpg
+  - image: /uploads/5.jpg
     caption: Zebra - Vegas, US
-  - image: /images/6.jpg
+  - image: /uploads/6.jpg
     caption: Fox - San Diego, US
-  - image: /images/7.jpg
+  - image: /uploads/7.jpg
     caption: Parrot - Queenstown, NZ
-  - image: /images/8.jpg
+  - image: /uploads/8.jpg
     caption: Peacock - Seattle, US
-  - image: /images/9.jpg
+  - image: /uploads/9.jpg
     caption: Pig - Bangkok, TH
-  - image: /images/10.jpg
+  - image: /uploads/10.jpg
     caption: Tiger - Montreal, CA
-  - image: /images/11.jpg
+  - image: /uploads/11.jpg
     caption: Pig - Reykjavik, IS
-  - image: /images/12.jpg
+  - image: /uploads/12.jpg
     caption: Cow - Mt Cook, NZ
-  - image: /images/13.jpg
+  - image: /uploads/13.jpg
     caption: Monkey - Canmore, CA
-  - image: /images/14.jpg
+  - image: /uploads/14.jpg
     caption: Turtle - New York, US
-  - image: /images/15.jpg
+  - image: /uploads/15.jpg
     caption: Donkey - Tahoe, US
-  - image: /images/16.jpg
+  - image: /uploads/16.jpg
     caption: Elephant - New York, US
-  - image: /images/17.jpg
+  - image: /uploads/17.jpg
     caption: Lizard - San Francisco, US
-  - image: /images/18.jpg
+  - image: /uploads/18.jpg
     caption: Eagle - Canmore, CA
-  - image: /images/19.jpg
+  - image: /uploads/19.jpg
     caption: Fox - Moeraki, NZ
-  - image: /images/20.jpg
+  - image: /uploads/20.jpg
     caption: Gorilla - Nelson, NZ
-  - image: /images/21.jpg
+  - image: /uploads/21.jpg
     caption: Monkey - ID
-  - image: /images/22.jpg
+  - image: /uploads/22.jpg
     caption: Bear - JA
-  - image: /images/23.jpg
+  - image: /uploads/23.jpg
     caption: Frog - ZA
-  - image: /images/24.jpg
+  - image: /uploads/24.jpg
     caption: Butterfly - Auckland, NZ
 ---
 
 <ul class="gallery">
 	{% for photo in page.photos %}
-		<li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}" data-location="{{ photo.location}}"></a></li>
+		<li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
 	{% endfor %}
 	<li class="spacer"></li>
 	<li class="spacer"></li>
@@ -70,7 +70,7 @@ photos:
 </ul>
 
 <div class="overlay">
-	<a href="#" class="close">✕</a>
+	<a href="#" class="close">&#10005;</a>
 	<a class="prev">&lsaquo;</a>
 	<a class="next">&rsaquo;</a>
 	<p class="caption"></p>

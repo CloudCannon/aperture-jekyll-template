@@ -2,13 +2,13 @@
 # Site
 
 title: Aperture Template
-url: "https://cosmic-hippopotamus.cloudvent.net/"
+url: "https://cosmic-hippopotamus.cloudvent.net"
 baseurl:
 google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: photography portfolio template for Jekyll.
+description: Photography portfolio template for Jekyll.
 author:
   name:
   email:
@@ -29,12 +29,12 @@ defaults:
       path: ""
     values:
       layout: "default"
-      text-width: true
+      text_width: true
   -
     scope:
       path: "index.html"
     values:
-      text-width: false
+      text_width: false
 
 plugins:
   - jekyll-sitemap
@@ -48,17 +48,6 @@ exclude:
 
 # -----------
 # CloudCannon
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
 
 _options:
   image:

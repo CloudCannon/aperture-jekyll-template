@@ -9,10 +9,6 @@ body {
 header h1 a {
 	text-decoration: none;
 	color: $color;
-
-	&:hover {
-		text-decoration: underline;
-	}
 }
 
 .text-width {
@@ -44,8 +40,13 @@ header h1 a {
 			float: left;
 		}
 
-		&.spacer:before {
-			padding: 0;
+		&.spacer {
+			height: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+			&:before {
+				padding: 0;
+			}
 		}
 
 		a {
