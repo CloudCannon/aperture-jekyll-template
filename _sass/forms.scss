@@ -1,3 +1,17 @@
+form {
+	max-width: 600px;
+}
+
+input, select, textarea {
+	border-radius: 6px;
+	background: #fff;
+	font-family: 'Rosario', sans-serif;
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 2px #fff;
+	}
+}
+
 input[type="submit"] {
 	background: #fff;
 	cursor: pointer;
@@ -13,16 +27,14 @@ input[type="submit"] {
 	&:hover {
 		background: $link-color;
 	}
-
-	&:focus {
-		outline: none;
-	}
 }
 
 input[type="submit"] {
-	margin-top: 10px;
+	margin-top: 25px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	font-size: 1.2em;
+
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -33,10 +45,6 @@ input[type="text"], input[type="email"], textarea {
 	box-sizing: border-box;
 	border: 1px solid #666;
 	resize: none;
-
-	&:focus {
-		outline: 2px solid #888;
-	}
 }
 
 textarea {
@@ -58,24 +66,28 @@ legend {
 	background: 0;
 	padding: 0;
 	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 
-	.split {
-		flex: 0 0 380px;
+	@media #{$tablet} {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.split {
+			flex: 1;
+			$split-space: 10px;
+			margin: 0 $split-space 0 0;
+
+			& + .split {
+				margin: 0 0 0 $split-space;
+			}
+		}
 	}
 }
 
 select {
 	width: 100%;
-	padding: 20px;
 	height: 43px;
 	background: #fff;
 	border-color: rgba(0,0,0,0);
 	font-size: 1em;
-	outline: 1px solid #666;
-	&:focus {
-		outline: 2px solid #333;
-	}
 }
