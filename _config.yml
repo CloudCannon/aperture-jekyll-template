@@ -30,6 +30,7 @@ defaults:
     values:
       layout: "default"
       text_width: true
+      image: /uploads/1.jpg
   -
     scope:
       path: "index.html"
