@@ -1,6 +1,5 @@
 .split-content {
 	display: flex;
-	margin: 0 -20px;
 	flex-wrap: wrap;
 
 	.side-content {
@@ -17,15 +16,13 @@
 	.side-photo {
 		display: flex;
 		align-items: center;
-		flex: 1 0 300px;
+		flex: 0 1 400px;
+		margin: 0 20px 30px 0;
 
 		img {
 			display: block;
 			margin: 0 auto;
+			height: 100%;
 		}
-	}
-
-	.side-content, .side-photo {
-		margin: 0 20px;
 	}
 }
