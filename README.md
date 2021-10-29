@@ -9,6 +9,8 @@ Find more templates and themes at [CloudCannon Academy](https://learn.cloudcanno
 
 Learn Jekyll with step-by-step tutorials and videos at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/aperture-jekyll-template)
+
 ## Features
 
 * Photo grid
